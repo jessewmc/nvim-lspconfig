@@ -1,6 +1,6 @@
 local util = require 'lspconfig.util'
 
-local bin_name = 'ruby-lsp'
+local bin_name = 'fuzzy'
 
 -- defaults to stdio
 local cmd = { bin_name }
@@ -16,12 +16,12 @@ return {
     root_dir = util.root_pattern('Gemfile', '.git'),
     init_options = {
       enabledFeatures = {
-        'codeActions',
         'diagnostics',
         'documentHighlights',
         'documentSymbols',
-        'formatting',
-        'inlayHint',
+        'definition',
+        'references',
+        'rename',
       },
     },
   },
