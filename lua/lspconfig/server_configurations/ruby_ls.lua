@@ -1,6 +1,6 @@
 local util = require 'lspconfig.util'
 
-local bin_name = 'fuzzy'
+local bin_name = '/usr/local/bin/fuzzy'
 
 -- defaults to stdio
 local cmd = { bin_name }
